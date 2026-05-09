@@ -108,8 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
         signupForm.reset();
         // Refresh activity list to reflect new participant
         activitiesList.innerHTML = '<p>Loading activities...</p>';
-        fetchActivities();
         activitySelect.innerHTML = '<option value="">-- Select an activity --</option>';
+        fetchActivities();
       } else {
         messageDiv.textContent = result.detail || "An error occurred";
         messageDiv.className = "error";
